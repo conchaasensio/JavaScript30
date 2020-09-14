@@ -17,4 +17,4 @@ function removeTransition(ev) {
 
 const keys = Array.from(document.querySelectorAll('.key'));
 window.addEventListener('keydown', playSound);
-keys.forEach((key) => key.addEventListener('transitioned', removeTransition));
+keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
